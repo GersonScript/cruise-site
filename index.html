@@ -1,122 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cruzeiro dos Sonhos - Descubra destinos incríveis e experiências inesquecíveis."
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Website de Cruzeiro</title>
+    <title>Cruzeiro dos Sonhos</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">Meu Site</div>
-      <nav class="navigation">
+      <div class="logo" aria-label="Logo do site">Meu Site</div>
+      <nav class="navigation" aria-label="Menu de navegação principal">
         <a href="#home">Início</a>
         <a href="#destinos">Destinos</a>
         <a href="#galeria">Galeria</a>
         <a href="#depoimentos">Depoimentos</a>
       </nav>
     </header>
-    <!-- Seção Início -->
-    <section id="home" class="full-screen-section home-section">
-      <div class="home-content">
-        <h1>Bem-vindo ao Cruzeiro dos Sonhos</h1>
+
+    <main>
+      <!-- Seção Início -->
+      <section id="home">
+        <div class="content">
+          <h1>Bem-vindo ao Nosso Cruzeiro</h1>
+          <p>Descubra destinos incríveis e experiências únicas a bordo.</p>
+          <a href="#destinos" class="button">Explorar Destinos</a>
+        </div>
+      </section>
+
+      <!-- Seção Destinos -->
+      <section id="destinos" class="full-screen-section">
+        <h2 class="section-title">Destinos Incríveis</h2>
         <p>
-          Embarque na aventura da sua vida! Descubra paisagens deslumbrantes,
-          experiências inesquecíveis e conforto de primeira classe.
+          Descubra os lugares mais belos e encantadores para suas próximas
+          férias.
         </p>
-        <a href="compra.html" class="button">Compre Sua Passagem</a>
-      </div>
-    </section>
+        <div class="destino-cards">
+          <article class="card">
+            <img
+              src="./image/destino1.jpg"
+              alt="Vista aérea da Praia dos Sonhos"
+            />
+            <h3>Praia dos Sonhos</h3>
+            <p>Areias brancas, águas cristalinas e tranquilidade garantida.</p>
+          </article>
+          <article class="card">
+            <img
+              src="./image/destino2.jpg"
+              alt="Paisagem das Montanhas Encantadas ao pôr do sol"
+            />
+            <h3>Montanhas Encantadas</h3>
+            <p>Aventuras incríveis cercadas por paisagens de tirar o fôlego.</p>
+          </article>
+          <article class="card">
+            <img
+              src="./image/destino3.jpg"
+              alt="Centro histórico de uma cidade antiga"
+            />
+            <h3>Cidade Histórica</h3>
+            <p>Explore a cultura e a história em um ambiente único.</p>
+          </article>
+        </div>
+        <a href="#galeria" class="button">Ver Mais</a>
+      </section>
 
-    <!-- Seção Destinos -->
-    <section id="destinos" class="full-screen-section">
-      <h1 class="section-title">Destinos Incríveis</h1>
-      <p>
-        Descubra os lugares mais belos e encantadores para suas próximas férias.
-      </p>
-      <div class="destino-cards">
-        <div class="card">
-          <img src="./image/destino1.jpg" alt="Praia dos Sonhos" />
-          <h3>Praia dos Sonhos</h3>
-          <p>Areias brancas, águas cristalinas e tranquilidade garantida.</p>
+      <!-- Seção Galeria -->
+      <section id="galeria" class="full-screen-section">
+        <h2 class="section-title">Galeria de Imagens</h2>
+        <p>Veja alguns dos melhores momentos capturados nos nossos destinos.</p>
+        <div class="galeria-images">
+          <figure class="galeria-image">
+            <img src="./image/galeria1.jpg" alt="Pôr do sol em um cruzeiro" />
+          </figure>
+          <figure class="galeria-image">
+            <img src="./image/galeria2.jpg" alt="Cabines luxuosas do navio" />
+          </figure>
+          <figure class="galeria-image">
+            <img
+              src="./image/galeria3.jpg"
+              alt="Espaço de recreação no navio"
+            />
+          </figure>
+          <figure class="galeria-image">
+            <img src="./image/galeria4.jpg" alt="Vista do oceano" />
+          </figure>
+          <figure class="galeria-image">
+            <img
+              src="./image/galeria5.jpg"
+              alt="Clientes felizes na piscina do cruzeiro"
+            />
+          </figure>
         </div>
-        <div class="card">
-          <img src="./image/destino2.jpg" alt="Montanhas Encantadas" />
-          <h3>Montanhas Encantadas</h3>
-          <p>Aventuras incríveis cercadas por paisagens de tirar o fôlego.</p>
-        </div>
-        <div class="card">
-          <img src="./image/destino3.jpg" alt="Cidade Histórica" />
-          <h3>Cidade Histórica</h3>
-          <p>Explore a cultura e a história em um ambiente único.</p>
-        </div>
-      </div>
-      <a href="#galeria" class="button">Ver Mais</a>
-    </section>
+      </section>
 
-    <!-- Seção Galeria -->
-    <section id="galeria" class="full-screen-section">
-      <h1 class="section-title">Galeria de Imagens</h1>
-      <p>Veja alguns dos melhores momentos capturados nos nossos destinos.</p>
-      <div class="galeria-images">
-        <div class="galeria-image">
-          <img src="./image/galeria1.jpg" alt="Imagem 1" />
-        </div>
-        <div class="galeria-image">
-          <img src="./image/galeria2.jpg" alt="Imagem 2" />
-        </div>
-        <div class="galeria-image">
-          <img src="./image/galeria3.jpg" alt="Imagem 3" />
-        </div>
-        <div class="galeria-image">
-          <img src="./image/galeria4.jpg" alt="Imagem 4" />
-        </div>
-        <div class="galeria-image">
-          <img src="./image/galeria5.jpg" alt="Imagem 5" />
-        </div>
-      </div>
-    </section>
+      <!-- Seção Depoimentos -->
+      <div id="depoimentos">
+        <div class="feedback-section">
+          <div class="carousel-container">
+            <div class="carousel">
+              <!-- Depoimento 1 -->
+              <div class="feedback-card">
+                <img
+                  src="image/usuario1.jpg"
+                  alt="Foto do Usuário 1"
+                  class="user-photo"
+                />
+                <p>
+                  "Foi uma experiência maravilhosa! Eu adorei cada momento."
+                </p>
+                <h4>Maria Silva</h4>
+              </div>
 
-    <!-- Seção Depoimentos -->
-    <section id="depoimentos" class="full-screen-section feedback-section">
-      <h1 class="section-title">O Que Nossos Clientes Dizem</h1>
-      <div class="feedback-container">
-        <div class="feedback-card">
-          <p>
-            "Essa viagem superou todas as minhas expectativas. Recomendo a
-            todos!"
-          </p>
-          <img
-            class="feedback-image"
-            src="./image/usuario1.jpg"
-            alt="Cliente 1"
-          />
-          <h4>Ana Silva</h4>
-        </div>
-        <div class="feedback-card">
-          <p>"Foi uma experiência incrível! Mal posso esperar para voltar."</p>
-          <img
-            class="feedback-image"
-            src="./image/usuario2.jpg"
-            alt="Cliente 2"
-          />
-          <h4>Carlos Mendes</h4>
-        </div>
-        <div class="feedback-card">
-          <p>"O atendimento foi impecável e os destinos são maravilhosos."</p>
-          <img
-            class="feedback-image"
-            src="./image/usuario3.jpg"
-            alt="Cliente 3"
-          />
-          <h4>Júlia Oliveira</h4>
+              <!-- Depoimento 2 -->
+              <div class="feedback-card">
+                <img
+                  src="image/usuario2.jpg"
+                  alt="Foto do Usuário 2"
+                  class="user-photo"
+                />
+                <p>
+                  "O cruzeiro superou todas as minhas expectativas. Muito
+                  obrigado!"
+                </p>
+                <h4>João Souza</h4>
+              </div>
+
+              <!-- Depoimento 3 -->
+              <div class="feedback-card">
+                <img
+                  src="image/usuario3.jpg"
+                  alt="Foto do Usuário 3"
+                  class="user-photo"
+                />
+                <p>"Uma viagem inesquecível. Super recomendo!"</p>
+                <h4>Ana Oliveira</h4>
+              </div>
+            </div>
+
+            <!-- Botões do Carrossel -->
+            <button class="carousel-button left-button">&#9664;</button>
+            <button class="carousel-button right-button">&#9654;</button>
+          </div>
         </div>
       </div>
-      <a href="#home" class="button">Voltar ao Início</a>
-    </section>
+    </main>
 
     <footer class="footer">
-      © 2024 Meu Site. Todos os direitos reservados.
+      <p>© 2024 Meu Site. Todos os direitos reservados.</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
