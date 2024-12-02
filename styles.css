@@ -1,0 +1,247 @@
+/* =========================== */
+/* Base */
+/* =========================== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0f111a;
+  color: #d1d5db;
+  scroll-behavior: smooth;
+}
+
+/* =========================== */
+/* Header */
+/* =========================== */
+.header {
+  background: #1e1e2c;
+  color: #d1d5db;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navigation a {
+  color: #d1d5db;
+  margin: 0 1em;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #3d5afe;
+}
+
+/* =========================== */
+/* Seções em Tela Cheia */
+/* =========================== */
+.full-screen-section {
+  height: 100vh; /* Ocupa 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  background-size: cover;
+  background-position: center;
+}
+
+#home {
+  background: url("image/cruzeiro.webp") no-repeat center center/cover;
+}
+
+#galeria {
+  background: url("") no-repeat center center/cover;
+}
+
+#depoimentos {
+  background: url("") no-repeat center center/cover;
+}
+
+/* =========================== */
+/* Títulos das Seções */
+/* =========================== */
+.section-title {
+  font-size: 3em;
+  color: #3d5afe;
+  margin-bottom: 1em;
+}
+
+/* =========================== */
+/* Footer */
+/* =========================== */
+.footer {
+  background: #1e1e2c;
+  color: #9ca3af;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* =========================== */
+/* Botões */
+/* =========================== */
+.button {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.8em 2em;
+  background: #3d5afe;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #536dfe;
+}
+
+/* =========================== */
+/* Cartões de Destinos */
+/* =========================== */
+.destino-cards {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5em;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: #3d5afe;
+}
+
+.card p {
+  font-size: 1em;
+  color: #d1d5db;
+}
+
+/* =========================== */
+/* Galeria de Imagens */
+/* =========================== */
+.galeria-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.galeria-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================== */
+/* Depoimentos */
+/* =========================== */
+.feedback-section {
+  background: #f5f5f5;
+  padding: 4em 1em;
+  text-align: center;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2em;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-card p {
+  font-size: 1.1em;
+  color: #555555;
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+.feedback-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  border: 3px solid #003366;
+}
+
+.feedback-card h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* =========================== */
+/* Seção Início */
+/* =========================== */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom right, #003366, #3d5afe);
+  color: white;
+  padding: 3em;
+}
+
+.home-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #ffeb3b;
+}
+
+.home-content p {
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  color: #ffffff;
+}
+
+.home-content .button {
+  background: #ffeb3b;
+  color: #003366;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.home-content .button:hover {
+  transform: scale(1.05);
+  background: #ffd700;
+}
