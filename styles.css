@@ -30,7 +30,7 @@ body {
   color: #d1d5db;
   margin: 0 1em;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.3em;
   transition: color 0.3s ease;
 }
 
@@ -81,6 +81,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%; /* Centraliza verticalmente o conteúdo */
+  color: #ffdd00;
+  font-size: 2em;
 }
 
 /* Seção de Depoimentos */
@@ -171,69 +173,189 @@ body {
 .button {
   display: inline-block;
   margin-top: 2em;
-  padding: 0.8em 2em;
-  background: #3d5afe;
+  padding: 0.5em 1em;
+  background: #4169e1;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s ease, transform 0.2s ease;
 }
-
-.button:hover {
-  background: #536dfe;
-  transform: scale(1.05);
+/* =========================== */
+/* Cartões de Destinos - Layout Dinâmico */
+/* =========================== */
+/* Estilos Gerais */
+#destinos {
+  background: #1c1e26;
+  color: white;
+  padding: 4em 1em;
+  text-align: center;
 }
 
-/* =========================== */
-/* Cartões de Destinos */
-/* =========================== */
 .destino-cards {
   display: flex;
-  gap: 2em;
   justify-content: center;
-  margin-top: 2em;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  width: 250px; /* Aumentando a largura */
+  height: 400px; /* Aumentando a altura */
+  background-color: transparent; /* Removendo a cor branca */
+  color: #fff;
   border-radius: 10px;
-  padding: 1.5em;
-  max-width: 300px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Mais sombra para destacar */
+  transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
+.card-image {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1em;
+  height: 30%; /* Imagem ocupa 60% da altura */
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efeito de elevação */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.1); /* Zoom na imagem ao passar o mouse */
+}
+
+/* Texto dentro da div */
+.card-content {
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .card h3 {
-  font-size: 1.5em;
-  color: #3d5afe;
+  font-size: 1.8em;
+  margin: 0.5em 0;
+  color: #ffeb3b;
 }
 
 .card p {
-  font-size: 1em;
-  color: #d1d5db;
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #ffd700;
+}
+
+.saiba-mais {
+  display: inline-block;
+  padding: 0.8em 2em;
+  background: #ffeb3b;
+  color: #003366;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.saiba-mais:hover {
+  background: #ffd700;
+  transform: scale(1.05);
 }
 
 /* =========================== */
 /* Galeria de Imagens */
 /* =========================== */
+#galeria {
+  background: #1c1e26; /* Fundo escuro para destaque das imagens */
+  padding: 2em 1em;
+  text-align: center;
+  color: #d1d5db;
+}
+
+#galeria .section-title {
+  font-size: 3.5em;
+  color: #3d5afe;
+  margin-bottom: 1em;
+}
+#txt {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 2em;
+}
+#galeria p {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 2em;
+}
+
+/* Layout da galeria */
 .galeria-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5em;
-  margin-top: 2em;
+  padding: 0 1em;
+}
+
+/* Estilo para cada imagem */
+.galeria-image {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .galeria-image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem ocupe toda a figura */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease; /* Animação para zoom */
+}
+
+/* Efeito de hover */
+.galeria-image:hover {
+  transform: translateY(-10px); /* Destaca a imagem ao passar o mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.galeria-image:hover img {
+  transform: scale(1.1); /* Zoom suave na imagem */
+}
+
+/* Títulos e descrições (opcional) */
+.galeria-image figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.galeria-image:hover figcaption {
+  opacity: 1;
 }
 
 /* =========================== */

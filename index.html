@@ -7,7 +7,7 @@
       name="description"
       content="Cruzeiro dos Sonhos - Descubra destinos incríveis e experiências inesquecíveis."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./vendas.css" />
     <title>Cruzeiro dos Sonhos</title>
   </head>
   <body>
@@ -34,37 +34,58 @@
       <!-- Seção Destinos -->
       <section id="destinos" class="full-screen-section">
         <h2 class="section-title">Destinos Incríveis</h2>
-        <p>
+        <p id="txt">
           Descubra os lugares mais belos e encantadores para suas próximas
           férias.
         </p>
         <div class="destino-cards">
           <article class="card">
-            <img
-              src="./image/destino1.jpg"
-              alt="Vista aérea da Praia dos Sonhos"
-            />
-            <h3>Praia dos Sonhos</h3>
-            <p>Areias brancas, águas cristalinas e tranquilidade garantida.</p>
+            <div class="card-image">
+              <img
+                src="./image/destino1.webp"
+                alt="Vista aérea da Praia dos Sonhos"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Praia dos Sonhos</h3>
+              <p>
+                Areias brancas, águas cristalinas e tranquilidade garantida.
+              </p>
+              <p class="price">R$ 2.500,00</p>
+              <a href="./vendas.html" class="saiba-mais">Saiba Mais</a>
+            </div>
           </article>
           <article class="card">
-            <img
-              src="./image/destino2.jpg"
-              alt="Paisagem das Montanhas Encantadas ao pôr do sol"
-            />
-            <h3>Montanhas Encantadas</h3>
-            <p>Aventuras incríveis cercadas por paisagens de tirar o fôlego.</p>
+            <div class="card-image">
+              <img
+                src="./image/destino2.webp"
+                alt="Paisagem das Montanhas Encantadas ao pôr do sol"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Montanhas Encantadas</h3>
+              <p>
+                Aventuras incríveis cercadas por paisagens de tirar o fôlego.
+              </p>
+              <p class="price">R$ 3.000,00</p>
+              <a href="./vendas.html" class="saiba-mais">Saiba Mais</a>
+            </div>
           </article>
           <article class="card">
-            <img
-              src="./image/destino3.jpg"
-              alt="Centro histórico de uma cidade antiga"
-            />
-            <h3>Cidade Histórica</h3>
-            <p>Explore a cultura e a história em um ambiente único.</p>
+            <div class="card-image">
+              <img
+                src="./image/destino3.webp"
+                alt="Centro histórico de uma cidade antiga"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Cidade Histórica</h3>
+              <p>Explore a cultura e a história em um ambiente único.</p>
+              <p class="price">R$ 2.800,00</p>
+              <a href="./vendas.html" class="saiba-mais">Saiba Mais</a>
+            </div>
           </article>
         </div>
-        <a href="#galeria" class="button">Ver Mais</a>
       </section>
 
       <!-- Seção Galeria -->
@@ -72,27 +93,27 @@
         <h2 class="section-title">Galeria de Imagens</h2>
         <p>Veja alguns dos melhores momentos capturados nos nossos destinos.</p>
         <div class="galeria-images">
-          <figure class="galeria-image">
-            <img src="./image/galeria1.jpg" alt="Pôr do sol em um cruzeiro" />
-          </figure>
-          <figure class="galeria-image">
-            <img src="./image/galeria2.jpg" alt="Cabines luxuosas do navio" />
-          </figure>
-          <figure class="galeria-image">
+          <div class="galeria-image">
+            <img src="./image/galeria1.webp" alt="Pôr do sol em um cruzeiro" />
+          </div>
+          <div class="galeria-image">
+            <img src="./image/galeria2.webp" alt="Cabines luxuosas do navio" />
+          </div>
+          <div class="galeria-image">
             <img
-              src="./image/galeria3.jpg"
+              src="./image/galeria3.webp"
               alt="Espaço de recreação no navio"
             />
-          </figure>
-          <figure class="galeria-image">
-            <img src="./image/galeria4.jpg" alt="Vista do oceano" />
-          </figure>
-          <figure class="galeria-image">
+          </div>
+          <div class="galeria-image">
+            <img src="./image/galeria4.webp" alt="Vista do oceano" />
+          </div>
+          <div class="galeria-image">
             <img
-              src="./image/galeria5.jpg"
+              src="./image/galeria5.webp"
               alt="Clientes felizes na piscina do cruzeiro"
             />
-          </figure>
+          </div>
         </div>
       </section>
 
@@ -104,7 +125,7 @@
               <!-- Depoimento 1 -->
               <div class="feedback-card">
                 <img
-                  src="image/usuario1.jpg"
+                  src="image/usuario1.webpdestino3.webp"
                   alt="Foto do Usuário 1"
                   class="user-photo"
                 />
@@ -117,7 +138,7 @@
               <!-- Depoimento 2 -->
               <div class="feedback-card">
                 <img
-                  src="image/usuario2.jpg"
+                  src="image/usuario1.webpdestino3.webp"
                   alt="Foto do Usuário 2"
                   class="user-photo"
                 />
@@ -131,7 +152,7 @@
               <!-- Depoimento 3 -->
               <div class="feedback-card">
                 <img
-                  src="image/usuario3.jpg"
+                  src="image/usuario1.webpdestino3.webp"
                   alt="Foto do Usuário 3"
                   class="user-photo"
                 />

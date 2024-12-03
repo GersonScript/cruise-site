@@ -1,0 +1,119 @@
+/* =========================== */
+/* Geral */
+/* =========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+header .navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-size: 1.2em;
+}
+
+/* =========================== */
+/* Pacotes */
+/* =========================== */
+.pacotes {
+  background-color: #fff;
+  padding: 2em 0;
+}
+
+.pacotes h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  color: #2c3e50;
+}
+
+.pacotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 0 10%;
+}
+
+.pacote {
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.pacote img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pacote-info {
+  padding: 1em;
+}
+
+.pacote-info h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
+}
+
+.pacote-info p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+.pacote-info .preco {
+  font-size: 2em;
+  color: #e74c3c;
+}
+
+.pacote-info .detalhes {
+  font-size: 1.1em;
+  margin-top: 1em;
+  color: #3498db;
+}
+
+.btn-ver {
+  background-color: #3498db;
+  color: #fff;
+  padding: 1em;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 1.5em;
+  border-radius: 5px;
+}
+
+.btn-ver:hover {
+  background-color: #2980b9;
+}
+
+/* =========================== */
+/* Responsividade */
+/* =========================== */
+@media (max-width: 768px) {
+  .pacotes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .pacotes-grid {
+    grid-template-columns: 1fr;
+  }
+}
